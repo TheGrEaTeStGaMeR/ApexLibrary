@@ -1,0 +1,15 @@
+<!-- views/navbar.ejs -->
+<nav class="navbar">
+  <a href="/">Home</a> | 
+  <% if (currentUser) { %>
+    <a href="/logout">Logout</a> |
+    <% } else { %>
+      <a href="/login">Login</a> |
+      <a href="/register">Register</a> |
+      <% } %>
+        <a href="/books">Books</a> |
+        <% if (currentUser) { %>
+          <span>Username: <%= currentUser.username %></span>
+          <% } else { %>
+            <% } %>
+</nav>

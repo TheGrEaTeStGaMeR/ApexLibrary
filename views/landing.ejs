@@ -1,0 +1,67 @@
+<!-- views/landing.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Library - Home</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.png">
+</head>
+
+<body id="allPage">
+
+  <header>
+    <%- include('partials/navbar')%>
+  </header>
+
+  <main>
+    <h1 style="display: block; margin-left: auto; margin-right: auto; width: 380px;">Welcome to Our Library
+    </h1>
+    <div id="info">
+      <img src="/logo.jpg" height="300" width="600" alt="Apex Library Logo">
+      <p class="mission">
+        Welcome to Apex Library, your gateway to a world of knowledge and imagination. At Apex Library, we are
+        passionate about connecting readers of all ages with an extensive collection of books spanning various genres,
+        from timeless classics to contemporary bestsellers. Our mission is to foster a love for reading and provide a
+        nurturing environment where learning and discovery thrive. Whether you are seeking thrilling adventures,
+        thought-provoking literature, or valuable resources for research, Apex Library is your destination. Join us in
+        this literary journey, where each page turns into a new adventure, and every book becomes a cherished companion.
+        Let the wonders of storytelling and the power of knowledge inspire you on your quest for enlightenment and
+        enjoyment. Discover, learn, and grow with Apex Library -- where the world of books unfolds before your eyes.
+      </p>
+    </div>
+    <br><br>
+    <div id="books">
+      <section class="book-list-section">
+        <h2>Available Books</h2>
+        <% if (books.length> 0) { %>
+          <ul class="book-list">
+            <% books.forEach(book=> { %>
+              <li>
+                <%= book.title %> by <%= book.author %> (<%= book.genre %>)
+              </li>
+              <% }); %>
+          </ul>
+          <% } else { %>
+            <p>No books currently available in the library.</p>
+            <% } %>
+      </section>
+    </div>
+    <br><br>
+    <section class="review-section">
+      <h2>Share Your Thoughts</h2>
+      <p>At Library Catalog, we value your opinions. After reading a book, leave your reviews and ratings to help
+        other readers make informed choices.</p>
+      <p>Join our growing community of book lovers and engage in lively discussions about your favorite reads.</p>
+      <a href="/books" class="btn btn-primary">Explore Books</a>
+    </section>
+  </main>
+  <br><br>
+  <footer>
+    <p>&copy; Copyright Apex Library - Centennial College - Summer 23</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+[
+    {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "genre": "Fiction",
+        "isbn": "9780061120084",
+        "publicationDate": "1960-07-11",
+        "description": "The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it.",
+        "averageRating": 4.3,
+        "reviews": []
+    },
+    {
+        "title": "1984",
+        "author": "George Orwell",
+        "genre": "Dystopian",
+        "isbn": "9780451524935",
+        "publicationDate": "1949-06-08",
+        "description": "A dystopian social science fiction novel set in a society characterized by government overreach, totalitarianism, and propaganda.",
+        "averageRating": 4.5,
+        "reviews": []
+    },
+    {
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "genre": "Romance",
+        "isbn": "9780486284736",
+        "publicationDate": "1813-01-28",
+        "description": "A classic novel of manners, love, and marriage centering on the Bennet family.",
+        "averageRating": 4.2,
+        "reviews": []
+    },
+    {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "genre": "Fiction",
+        "isbn": "9780743273565",
+        "publicationDate": "1925-04-10",
+        "description": "A tragic love story that portrays the decay of the American Dream during the Roaring Twenties.",
+        "averageRating": 4.1,
+        "reviews": []
+    },
+    {
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "author": "J.K. Rowling",
+        "genre": "Fantasy",
+        "isbn": "9780590353427",
+        "publicationDate": "1997-06-26",
+        "description": "The first book in the Harry Potter series, where a young wizard discovers his magical heritage.",
+        "averageRating": 4.7,
+        "reviews": []
+    },
+    {
+        "title": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "genre": "Fantasy",
+        "isbn": "9780618640157",
+        "publicationDate": "1954-07-29",
+        "description": "An epic fantasy novel that follows the quest to destroy the One Ring and defeat the dark lord Sauron.",
+        "averageRating": 4.6,
+        "reviews": []
+    },
+    {
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "genre": "Fiction",
+        "isbn": "9780316769174",
+        "publicationDate": "1951-07-16",
+        "description": "A controversial novel about a disenchanted teenager navigating the adult world.",
+        "averageRating": 4.0,
+        "reviews": []
+    },
+    {
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "genre": "Fantasy",
+        "isbn": "9780547928227",
+        "publicationDate": "1937-09-21",
+        "description": "The prelude to The Lord of the Rings, following Bilbo Baggins on an adventurous journey.",
+        "averageRating": 4.4,
+        "reviews": []
+    },
+    {
+        "title": "Moby-Dick",
+        "author": "Herman Melville",
+        "genre": "Fiction",
+        "isbn": "9780142437247",
+        "publicationDate": "1851-10-18",
+        "description": "A classic tale of obsession, revenge, and man's struggle against nature.",
+        "averageRating": 4.0,
+        "reviews": []
+    },
+    {
+        "title": "The Da Vinci Code",
+        "author": "Dan Brown",
+        "genre": "Mystery",
+        "isbn": "9780385504201",
+        "publicationDate": "2003-03-18",
+        "description": "A thriller novel that combines history, art, and religion in a quest for a hidden secret.",
+        "averageRating": 3.8,
+        "reviews": []
+    }
+]

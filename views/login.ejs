@@ -1,0 +1,39 @@
+<!-- views/login.ejs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.png">
+</head>
+
+<body id="allPage">
+    <header>
+        <%- include('partials/navbar') %>
+    </header>
+  <div class="form">
+    <h1>Login</h1>
+    <% if (messages.error) { %>
+        <p class="error"><%= messages.error %></p>
+      <% } %>
+    <form action="/login" method="POST">
+      <label for="email">Email:</label>
+      <input class="input" type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input class="input" type="password" id="password" name="password" required>
+
+      <button class="btn" type="submit">Login</button>
+    </form>
+  </div>
+  <br><br>
+  <footer>
+    <p>&copy; Copyright Apex Library - Centennial College - Summer 23</p>
+  </footer>
+</body>
+
+</html>
+

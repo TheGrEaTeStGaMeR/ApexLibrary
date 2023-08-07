@@ -1,0 +1,46 @@
+<!-- views/books/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Catalog - Books</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.png">
+</head>
+
+<body id="allPage">
+  <header>
+    <%- include('../partials/navbar') %>
+  </header>
+  <br>
+  <main>
+    <div class="book-details">
+      <h2>Books</h2>
+      <a href="/books/new" class="btn btn-primary">Add New Book</a>
+      <ul class="book-list">
+        <% books.forEach(book=> { %>
+          <a href="/books/<%= book._id %>">
+            <li>
+              <p><b>
+                  <%= book.title %>
+                </b></p>
+              Author: <%= book.author %><br>
+
+                Genre: <%= book.genre %><br>
+
+                  Average Rating: <%= book.averageRating.toFixed(1) %>
+            </li>
+          </a>
+          <% }) %>
+      </ul>
+    </div>
+  </main>
+  <br>
+  <footer>
+    <p>&copy; Copyright Apex Library - Centennial College - Summer 23</p>
+  </footer>
+</body>
+
+</html>

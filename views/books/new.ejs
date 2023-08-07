@@ -1,0 +1,49 @@
+<!-- views/books/new.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Catalog - Add New Book</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.png">
+</head>
+
+<body id="allPage">
+  <header>
+    <%- include('../partials/navbar') %>
+</header>
+  <main>
+    <div class="form">
+      <h2>Add New Book</h2>
+      <form method="POST" action="/books">
+        <label for="title">Title:</label>
+        <input class="input" type="text" id="title" name="title" required>
+
+        <label for="author">Author:</label>
+        <input class="input" type="text" id="author" name="author" required>
+
+        <label for="genre">Genre:</label>
+        <input class="input" type="text" id="genre" name="genre" required>
+
+        <label for="isbn">ISBN:</label>
+        <input class="input" type="text" id="isbn" name="isbn" required>
+
+        <label for="publicationDate">Publication Date:</label>
+        <input class="input" type="date" id="publicationDate" name="publicationDate">
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <input class="btn" type="submit" value="Add Book">
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Copyright Apex Library - Centennial College - Summer 23</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!-- views/books/edit.ejs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit - <%= book.title %>
+    </title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+
+</head>
+
+<body>
+    <div id="formPage">
+        <header>
+            <%- include('../partials/navbar') %>
+        </header>
+        <div class="form-container">
+            <div class="form">
+                <h2>Edit - <%= book.title %>
+                </h2>
+                <form method="POST" action="/books/<%= book._id %>?_method=PUT">
+                    <label for="title">Title:</label>
+                    <input class="input" type="text" id="title" name="title" value="<%= book.title %>" required>
+
+                    <label for="author">Author:</label>
+                    <input class="input" type="text" id="author" name="author" value="<%= book.author %>" required>
+
+                    <label for="genre">Genre:</label>
+                    <input class="input" type="text" id="genre" name="genre" value="<%= book.genre %>" required>
+
+                    <label for="isbn">ISBN:</label>
+                    <input class="input" type="text" id="isbn" name="isbn" value="<%= book.isbn %>" required>
+
+                    <label for="publicationDate">Publication Date:</label>
+                    <input class="input" type="date" id="publicationDate" name="publicationDate"
+                        value="<%= book.publicationDate ? book.publicationDate.toISOString().substr(0, 10) : '' %>">
+
+                    <label for="description">Description:</label>
+                    <textarea class="input" id="description" name="description" rows="4"
+                        required><%= book.description %></textarea>
+
+                    <div class="update-btn">
+                        <input class="update" type="submit" value="Update Book">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Copyright Apex Library - Centennial College - Summer 23</p>
+    </footer>
+</body>
+
+</html>
