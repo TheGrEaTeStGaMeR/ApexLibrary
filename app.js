@@ -13,7 +13,6 @@ const flash = require('express-flash');
 const { ensureAuthenticated } = require('./middleware/authMiddleware');
 
 const app = express();
-const port = 3000;
 
 mongoose.connect('mongodb+srv://priyanshu:20112003@apexlibrary.q28vcxe.mongodb.net/', {
     useNewUrlParser: true,
@@ -238,6 +237,7 @@ async function seedDatabase() {
     }
 }
 
+const port = process.env.PORT || 3000;
 app.listen(port, async () => {
     await seedDatabase();
     console.log(`Server is running on port ${port}`);
